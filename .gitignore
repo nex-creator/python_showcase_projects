@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments (per project)
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# VSCode and PyCharm settings
+.idea/
+.vscode/
+
+# Environment variables and secrets
+*.env
+*.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and database
+*.log
+*.sqlite3
+*.db
+
+# Cache and testing
+.cache/
+pytest_cache/
+.pytest_cache/
+.tox/
+coverage/
+htmlcov/
+.noseids
+
+# Compiled Cython files
+*.c
+*.cpp
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# MyPy and other tooling
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Token and OAuth files
+token.txt
+
+# Pycharm specific per project config
+**/.idea/
+
+# General project outputs (optional, based on your use)
+output/
+outputs/
+results/
