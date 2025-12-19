@@ -1,31 +1,36 @@
-# ☕️ Coffee & Wifi 💻 — Cafe Listing Flask App
+# ☕ Coffee & Wi-Fi 💻 — Cafe Listing Flask App
 
-A Flask web application to list and add cafes with details like coffee quality, Wi-Fi strength, and power availability, stored in a CSV file.
+A lightweight Flask web application that allows users to view and add cafes along with details such as coffee quality, Wi-Fi strength, and power socket availability.  
+All data is stored using a CSV file to keep the project simple and beginner-friendly.
 
 ---
 
-## 📌 Project Summary
+## 📌 Project Overview
 
-This project is a web app built with Flask where users can:
+This project demonstrates how to build a basic full-stack web application using Flask.
+
+Users can:
 
 - View a list of cafes and their amenities
-- Add new cafes via a form
-- Store and retrieve cafe data from a CSV file
-- Use emoji ratings for coffee, Wi-Fi, and power
+- Add new cafes through a web form
+- Store and retrieve cafe information from a CSV file
+- Use emoji-based ratings for coffee, Wi-Fi, and power availability
+
+The focus is on **Flask fundamentals**, form handling, and clean project structure without using a database.
 
 ---
 
 ## 🛠 Tech Stack
 
 - **Backend:** Flask (Python)
-- **Frontend:** HTML, CSS, Bootstrap
+- **Frontend:** HTML, CSS, Bootstrap 5
 - **Forms:** Flask-WTF, WTForms
-- **Storage:** CSV (no database)
-- **Styling:** Flask-Bootstrap (Bootstrap 5)
+- **Data Storage:** CSV file (no database)
+- **Styling:** Flask-Bootstrap
 
 ---
 
-## 📁 File Overview
+## 📁 Project Structure
 
 coffee-wifi-cafes/
 │
@@ -45,7 +50,6 @@ coffee-wifi-cafes/
 ├── README.md # This file
 └── learning-log.md # My personal learning notes
 
-
 ## 🚀 How to Run
 
 1. **Clone the repo:**
@@ -53,11 +57,10 @@ coffee-wifi-cafes/
 git clone https://github.com/your-username/coffee-wifi-cafes.git
 cd coffee-wifi-cafes
 
-
 Set up a virtual environment:
 
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 Install dependencies:
 
 pip install flask flask-wtf flask-bootstrap
@@ -66,8 +69,6 @@ Run the app:
 python main.py
 Open in browser:
 http://127.0.0.1:5000/
-
-
 
 📊 CSV Data Format
 Each row in cafe-data.csv includes:
@@ -87,3 +88,6 @@ Google Maps location links
 
 Bootstrap-powered UI
 
+🙋‍♀️ Author
+
+Created and maintained by nex-creator 🚀

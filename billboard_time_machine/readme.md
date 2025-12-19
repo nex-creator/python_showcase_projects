@@ -33,9 +33,9 @@ REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI")
 
 #### ✅ Takeaway:
 
-* Store sensitive information like API credentials securely in a `.env` file.
-* Use `python-dotenv` to load them into the script.
-* **Never commit your `.env` file to GitHub.** Use `.gitignore` to exclude it.
+- Store sensitive information like API credentials securely in a `.env` file.
+- Use `python-dotenv` to load them into the script.
+- **Never commit your `.env` file to GitHub.** Use `.gitignore` to exclude it.
 
 ---
 
@@ -50,7 +50,7 @@ saturday_date = date_obj - timedelta(days=days_to_subtract)
 
 #### ✅ Takeaway:
 
-* Billboard charts are **published on Saturdays**, so we adjust any weekday input to the **most recent Saturday**.
+- Billboard charts are **published on Saturdays**, so we adjust any weekday input to the **most recent Saturday**.
 
 ---
 
@@ -65,9 +65,9 @@ song_name_span = soup.select("li h3.c-title")
 
 #### ✅ Takeaway:
 
-* `BeautifulSoup` and `requests` are great for web scraping.
-* Use browser dev tools to find the correct HTML elements (like `h3.c-title` for song names).
-* Add a **user-agent** header to mimic a real browser request and avoid 403 errors.
+- `BeautifulSoup` and `requests` are great for web scraping.
+- Use browser dev tools to find the correct HTML elements (like `h3.c-title` for song names).
+- Add a **user-agent** header to mimic a real browser request and avoid 403 errors.
 
 ---
 
@@ -79,8 +79,8 @@ song_names = [song.getText().strip() for song in song_name_span]
 
 #### ✅ Takeaway:
 
-* Clean the extracted text using `.strip()`.
-* Validate if the list is empty — maybe the chart for that date doesn’t exist.
+- Clean the extracted text using `.strip()`.
+- Validate if the list is empty — maybe the chart for that date doesn’t exist.
 
 ---
 
@@ -93,8 +93,8 @@ user_id = sp.current_user()["id"]
 
 #### ✅ Takeaway:
 
-* Use the `SpotifyOAuth` flow from `spotipy` to get permission to modify playlists.
-* Set `scope="playlist-modify-private"` for creating private playlists.
+- Use the `SpotifyOAuth` flow from `spotipy` to get permission to modify playlists.
+- Set `scope="playlist-modify-private"` for creating private playlists.
 
 ---
 
@@ -108,8 +108,8 @@ for song in song_names:
 
 #### ✅ Takeaway:
 
-* Not all Billboard songs are available on Spotify.
-* Wrap your Spotify search in a try-except block to handle `IndexError` when no result is found.
+- Not all Billboard songs are available on Spotify.
+- Wrap your Spotify search in a try-except block to handle `IndexError` when no result is found.
 
 ---
 
@@ -122,8 +122,8 @@ sp.playlist_add_items(playlist_id=playlist["id"], items=song_uris)
 
 #### ✅ Takeaway:
 
-* Use `sp.user_playlist_create()` to make a playlist.
-* Add all valid URIs in bulk using `sp.playlist_add_items()`.
+- Use `sp.user_playlist_create()` to make a playlist.
+- Add all valid URIs in bulk using `sp.playlist_add_items()`.
 
 ---
 
@@ -149,7 +149,7 @@ Playlist '2025-05-17 Billboard100' created with 89 songs.
 
 ## 🔄 Future Improvements
 
-* Let users enter a song limit (top 10, 20, etc.).
-* Search songs with artist info to improve Spotify match accuracy.
-* Add a GUI using `tkinter` or `streamlit`.
-* Support other Billboard charts (e.g., Top 200 Albums).
+- Let users enter a song limit (top 10, 20, etc.).
+- Search songs with artist info to improve Spotify match accuracy.
+- Add a GUI using `tkinter` or `streamlit`.
+- Support other Billboard charts (e.g., Top 200 Albums).
